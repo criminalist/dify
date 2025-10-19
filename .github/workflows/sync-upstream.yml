@@ -1,7 +1,7 @@
 name: Sync with upstream
 on:
   schedule:
-    - cron: '0 0 * * 1'  # каждую неделю в понедельник в 00:00
+    - cron: '0 2 * * *'  # каждый день в 02:00 UTC
   workflow_dispatch:  # кнопка "Run workflow" в GitHub
 
 jobs:
