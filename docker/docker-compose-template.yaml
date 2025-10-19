@@ -178,7 +178,7 @@ services:
 
   # The DifySandbox
   sandbox:
-    image: langgenius/dify-sandbox:0.2.12
+    image: criminalist/dify-sandbox:0.2.12
     restart: always
     environment:
       # The DifySandbox configurations
