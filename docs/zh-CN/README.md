@@ -26,11 +26,11 @@
             alt="follow on LinkedIn"></a>
     <a href="https://hub.docker.com/u/langgenius" target="_blank">
         <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/langgenius/dify-web?labelColor=%20%23FDB062&color=%20%23f79009"></a>
-    <a href="https://github.com/langgenius/dify/graphs/commit-activity" target="_blank">
+    <a href="https://github.com/criminalist/dify/graphs/commit-activity" target="_blank">
         <img alt="Commits last month" src="https://img.shields.io/github/commit-activity/m/langgenius/dify?labelColor=%20%2332b583&color=%20%2312b76a"></a>
-    <a href="https://github.com/langgenius/dify/" target="_blank">
+    <a href="https://github.com/criminalist/dify/" target="_blank">
         <img alt="Issues closed" src="https://img.shields.io/github/issues-search?query=repo%3Alanggenius%2Fdify%20is%3Aclosed&label=issues%20closed&labelColor=%20%237d89b0&color=%20%235d6b98"></a>
-    <a href="https://github.com/langgenius/dify/discussions/" target="_blank">
+    <a href="https://github.com/criminalist/dify/discussions/" target="_blank">
         <img alt="Discussion posts" src="https://img.shields.io/github/discussions/langgenius/dify?labelColor=%20%239b8afb&color=%20%237a5af8"></a>
 </p>
 
@@ -65,7 +65,7 @@ Dify 是一个开源的 LLM 应用开发平台。其直观的界面结合了 AI 
 **2. 全面的模型支持**:
 与数百种专有/开源 LLMs 以及数十种推理提供商和自托管解决方案无缝集成，涵盖 GPT、Mistral、Llama3 以及任何与 OpenAI API 兼容的模型。完整的支持模型提供商列表可在[此处](https://docs.dify.ai/getting-started/readme/model-providers)找到。
 
-![providers-v5](https://github.com/langgenius/dify/assets/13230914/5a17bdbe-097a-4100-8363-40255b70f6e3)
+![providers-v5](https://github.com/criminalist/dify/assets/13230914/5a17bdbe-097a-4100-8363-40255b70f6e3)
 
 **3. Prompt IDE**:
 用于制作提示、比较模型性能以及向基于聊天的应用程序添加其他功能（如文本转语音）的直观界面。
@@ -100,7 +100,7 @@ Dify 是一个开源的 LLM 应用开发平台。其直观的界面结合了 AI 
 
 在 GitHub 上给 Dify Star，并立即收到新版本的通知。
 
-![star-us](https://github.com/langgenius/dify/assets/13230914/b823edc1-6388-4e25-ad45-2f6b187adbb4)
+![star-us](https://github.com/criminalist/dify/assets/13230914/b823edc1-6388-4e25-ad45-2f6b187adbb4)
 
 ## 安装社区版
 
@@ -191,11 +191,11 @@ docker compose up -d
 对于那些想要贡献代码的人，请参阅我们的[贡献指南](./CONTRIBUTING.md)。
 同时，请考虑通过社交媒体、活动和会议来支持 Dify 的分享。
 
-> 我们正在寻找贡献者来帮助将 Dify 翻译成除了中文和英文之外的其他语言。如果您有兴趣帮助，请参阅我们的[i18n README](https://github.com/langgenius/dify/blob/main/web/i18n-config/README.md)获取更多信息，并在我们的[Discord 社区服务器](https://discord.gg/8Tpq4AcN9c)的`global-users`频道中留言。
+> 我们正在寻找贡献者来帮助将 Dify 翻译成除了中文和英文之外的其他语言。如果您有兴趣帮助，请参阅我们的[i18n README](https://github.com/criminalist/dify/blob/main/web/i18n-config/README.md)获取更多信息，并在我们的[Discord 社区服务器](https://discord.gg/8Tpq4AcN9c)的`global-users`频道中留言。
 
 **Contributors**
 
-<a href="https://github.com/langgenius/dify/graphs/contributors">
+<a href="https://github.com/criminalist/dify/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=langgenius/dify" />
 </a>
 
@@ -203,8 +203,8 @@ docker compose up -d
 
 我们欢迎您为 Dify 做出贡献，以帮助改善 Dify。包括：提交代码、问题、新想法，或分享您基于 Dify 创建的有趣且有用的 AI 应用程序。同时，我们也欢迎您在不同的活动、会议和社交媒体上分享 Dify。
 
-- [GitHub Discussion](https://github.com/langgenius/dify/discussions). 👉：分享您的应用程序并与社区交流。
-- [GitHub Issues](https://github.com/langgenius/dify/issues)。👉：使用 Dify.AI 时遇到的错误和问题，请参阅[贡献指南](./CONTRIBUTING.md)。
+- [GitHub Discussion](https://github.com/criminalist/dify/discussions). 👉：分享您的应用程序并与社区交流。
+- [GitHub Issues](https://github.com/criminalist/dify/issues)。👉：使用 Dify.AI 时遇到的错误和问题，请参阅[贡献指南](./CONTRIBUTING.md)。
 - [电子邮件支持](mailto:hello@dify.ai?subject=%5BGitHub%5DQuestions%20About%20Dify)。👉：关于使用 Dify.AI 的问题。
 - [Discord](https://discord.gg/FngNHpbcY7)。👉：分享您的应用程序并与社区交流。
 - [X(Twitter)](https://twitter.com/dify_ai)。👉：分享您的应用程序并与社区交流。

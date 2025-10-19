@@ -9,7 +9,7 @@ const defaultData = {
 }
 
 const getStar = async () => {
-  const res = await fetch('https://api.github.com/repos/langgenius/dify')
+  const res = await fetch('https://api.github.com/repos/criminalist/dify')
 
   if (!res.ok)
     throw new Error('Failed to fetch github star')

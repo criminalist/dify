@@ -60,7 +60,7 @@ const CustomizeModal: FC<IShareLinkProps> = ({
         <div className='flex flex-col'>
           <div className='text-text-primary'>{t(`${prefixCustomize}.way1.step1`)}</div>
           <div className='mb-2 mt-1 text-xs text-text-tertiary'>{t(`${prefixCustomize}.way1.step1Tip`)}</div>
-          <a href={`https://github.com/langgenius/${isChatApp ? 'webapp-conversation' : 'webapp-text-generator'}`} target='_blank' rel='noopener noreferrer'>
+          <a href={`https://github.com/criminalist/${isChatApp ? 'webapp-conversation' : 'webapp-text-generator'}`} target='_blank' rel='noopener noreferrer'>
             <Button><GithubIcon className='mr-2 text-text-secondary' />{t(`${prefixCustomize}.way1.step1Operation`)}</Button>
           </a>
         </div>

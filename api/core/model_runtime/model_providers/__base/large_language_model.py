@@ -230,7 +230,7 @@ class LargeLanguageModel(AIModel):
                 user=user,
                 callbacks=callbacks,
             )
-            # Following https://github.com/langgenius/dify/issues/17799,
+            # Following https://github.com/criminalist/dify/issues/17799,
             # we removed the prompt_messages from the chunk on the plugin daemon side.
             # To ensure compatibility, we add the prompt_messages back here.
             result.prompt_messages = prompt_messages
@@ -274,7 +274,7 @@ class LargeLanguageModel(AIModel):
 
         try:
             for chunk in result:
-                # Following https://github.com/langgenius/dify/issues/17799,
+                # Following https://github.com/criminalist/dify/issues/17799,
                 # we removed the prompt_messages from the chunk on the plugin daemon side.
                 # To ensure compatibility, we add the prompt_messages back here.
                 chunk.prompt_messages = prompt_messages

@@ -49,7 +49,7 @@ export default function AccountAbout({
             <div className='text-text-accent'>
               {
                 IS_CE_EDITION
-                  ? <Link href={'https://github.com/langgenius/dify/blob/main/LICENSE'} target='_blank' rel='noopener noreferrer'>Open Source License</Link>
+                  ? <Link href={'https://github.com/criminalist/dify/blob/main/LICENSE'} target='_blank' rel='noopener noreferrer'>Open Source License</Link>
                   : <>
                     <Link href='https://dify.ai/privacy' target='_blank' rel='noopener noreferrer'>Privacy Policy</Link>,&nbsp;
                     <Link href='https://dify.ai/terms' target='_blank' rel='noopener noreferrer'>Terms of Service</Link>
@@ -70,7 +70,7 @@ export default function AccountAbout({
           <div className='flex items-center'>
             <Button className='mr-2' size='small'>
               <Link
-                href={'https://github.com/langgenius/dify/releases'}
+                href={'https://github.com/criminalist/dify/releases'}
                 target='_blank' rel='noopener noreferrer'
               >
                 {t('common.about.changeLog')}

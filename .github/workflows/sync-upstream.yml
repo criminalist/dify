@@ -12,13 +12,24 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Sync with upstream
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git remote add upstream https://github.com/langgenius/dify.git
+          git remote add upstream https://github.com/criminalist/dify.git
           git fetch upstream
           git checkout main
+          
+          # Сохраняем наш docker-compose.yaml перед merge
+          cp docker/docker-compose.yaml docker/docker-compose.yaml.backup
+          
           git merge upstream/main
+          
+          # Восстанавливаем наш docker-compose.yaml после merge
+          mv docker/docker-compose.yaml.backup docker/docker-compose.yaml
+          
+          git add docker/docker-compose.yaml
+          git commit -m "Keep custom docker-compose.yaml after upstream sync" || true
+          
           git push origin main

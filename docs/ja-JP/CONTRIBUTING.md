@@ -6,15 +6,15 @@ Difyに貢献しようとお考えですか？素晴らしいですね。私た�
 
 このガイドは、Dify自体と同様に、常に進化し続けています。実際のプロジェクトの進行状況と多少のずれが生じる場合もございますが、ご理解いただけますと幸いです。改善のためのフィードバックも歓迎いたします。
 
-ライセンスについては、[ライセンスと貢献者同意書](../../LICENSE)をご一読ください。また、コミュニティは[行動規範](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)に従っています。
+ライセンスについては、[ライセンスと貢献者同意書](../../LICENSE)をご一読ください。また、コミュニティは[行動規範](https://github.com/criminalist/.github/blob/main/CODE_OF_CONDUCT.md)に従っています。
 
 ## 始める前に
 
-取り組むべき課題をお探しですか？[初心者向けの課題](https://github.com/langgenius/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)から選んで始めてみましょう！
+取り組むべき課題をお探しですか？[初心者向けの課題](https://github.com/criminalist/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)から選んで始めてみましょう！
 
-新しいモデルランタイムやツールを追加したいですか？[プラグインリポジトリ](https://github.com/langgenius/dify-plugins)でPRを作成し、あなたの成果を見せてください。
+新しいモデルランタイムやツールを追加したいですか？[プラグインリポジトリ](https://github.com/criminalist/dify-plugins)でPRを作成し、あなたの成果を見せてください。
 
-既存のモデルランタイムやツールの更新、バグ修正をしたいですか？[公式プラグインリポジトリ](https://github.com/langgenius/dify-official-plugins)で作業を進めてください。
+既存のモデルランタイムやツールの更新、バグ修正をしたいですか？[公式プラグインリポジトリ](https://github.com/criminalist/dify-official-plugins)で作業を進めてください。
 
 参加して、貢献して、一緒に素晴らしいものを作りましょう！💡✨
 
@@ -55,7 +55,7 @@ PRの説明には、既存のイシューへのリンクを含めるか、新し
 | 機能の種類 | 優先度 |
 | ------------------------------------------------------------ | --------- |
 | チームメンバーによって高優先度とラベル付けされた機能 | 高 |
-| [コミュニティフィードボード](https://github.com/langgenius/dify/discussions/categories/feedbacks)での人気の機能リクエスト | 中程度 |
+| [コミュニティフィードボード](https://github.com/criminalist/dify/discussions/categories/feedbacks)での人気の機能リクエスト | 中程度 |
 | 非コア機能と軽微な改善 | 低 |
 | 価値はあるが緊急性の低いもの | 将来対応 |
 
@@ -75,11 +75,11 @@ PRの説明には、既存のイシューへのリンクを含めるか、新し
 
 #### フロントエンド
 
-フロントエンドサービスのセットアップについては、`web/README.md`の[ガイド](https://github.com/langgenius/dify/blob/main/web/README.md)を参照してください。このドキュメントには、フロントエンド環境を適切にセットアップするための詳細な手順が記載されています。
+フロントエンドサービスのセットアップについては、`web/README.md`の[ガイド](https://github.com/criminalist/dify/blob/main/web/README.md)を参照してください。このドキュメントには、フロントエンド環境を適切にセットアップするための詳細な手順が記載されています。
 
 #### バックエンド
 
-バックエンドサービスのセットアップについては、`api/README.md`の[手順](https://github.com/langgenius/dify/blob/main/api/README.md)を参照してください。このドキュメントには、バックエンドを正しく動作させるためのステップバイステップのガイドが含まれています。
+バックエンドサービスのセットアップについては、`api/README.md`の[手順](https://github.com/criminalist/dify/blob/main/api/README.md)を参照してください。このドキュメントには、バックエンドを正しく動作させるためのステップバイステップのガイドが含まれています。
 
 #### その他の注意点
 

@@ -6,15 +6,15 @@
 
 這份指南與 Dify 一樣，都在持續完善中。如果指南內容有落後於實際專案的情況，還請見諒，也歡迎提供改進建議。
 
-關於授權部分，請花點時間閱讀我們簡短的[授權和貢獻者協議](../../LICENSE)。社群也需遵守[行為準則](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)。
+關於授權部分，請花點時間閱讀我們簡短的[授權和貢獻者協議](../../LICENSE)。社群也需遵守[行為準則](https://github.com/criminalist/.github/blob/main/CODE_OF_CONDUCT.md)。
 
 ## 開始之前
 
-想找點事做？瀏覽我們的[新手友善議題](https://github.com/langgenius/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)並挑選一個開始！
+想找點事做？瀏覽我們的[新手友善議題](https://github.com/criminalist/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)並挑選一個開始！
 
-有酷炫的模型執行時期或工具要新增？在我們的[外掛倉庫](https://github.com/langgenius/dify-plugins)開啟 PR 展示你的作品。
+有酷炫的模型執行時期或工具要新增？在我們的[外掛倉庫](https://github.com/criminalist/dify-plugins)開啟 PR 展示你的作品。
 
-需要更新現有的模型執行時期、工具或修復錯誤？前往我們的[官方外掛倉庫](https://github.com/langgenius/dify-official-plugins)開始你的魔法之旅！
+需要更新現有的模型執行時期、工具或修復錯誤？前往我們的[官方外掛倉庫](https://github.com/criminalist/dify-official-plugins)開始你的魔法之旅！
 
 加入我們，一起貢獻並打造令人驚艷的作品吧！💡✨
 
@@ -55,7 +55,7 @@
 | 功能類型 | 優先級 |
 | -------- | ------ |
 | 團隊成員標記為高優先級的功能 | 高 |
-| 來自[社群回饋板](https://github.com/langgenius/dify/discussions/categories/feedbacks)的熱門功能請求 | 中 |
+| 來自[社群回饋板](https://github.com/criminalist/dify/discussions/categories/feedbacks)的熱門功能請求 | 中 |
 | 非核心功能和小幅改進 | 低 |
 | 有價值但非急迫的功能 | 未來功能 |
 
@@ -75,11 +75,11 @@
 
 #### 前端
 
-關於前端服務的設定，請參考 `web/README.md` 中的完整[指南](https://github.com/langgenius/dify/blob/main/web/README.md)。此文件提供詳細說明，幫助你正確設定前端環境。
+關於前端服務的設定，請參考 `web/README.md` 中的完整[指南](https://github.com/criminalist/dify/blob/main/web/README.md)。此文件提供詳細說明，幫助你正確設定前端環境。
 
 #### 後端
 
-關於後端服務的設定，請參考 `api/README.md` 中的詳細[說明](https://github.com/langgenius/dify/blob/main/api/README.md)。此文件包含逐步指引，幫助你順利啟動後端服務。
+關於後端服務的設定，請參考 `api/README.md` 中的詳細[說明](https://github.com/criminalist/dify/blob/main/api/README.md)。此文件包含逐步指引，幫助你順利啟動後端服務。
 
 #### 其他注意事項
 

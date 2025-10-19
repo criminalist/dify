@@ -163,7 +163,7 @@ export default function AppSelector() {
                           className={cn(itemClassName, 'group justify-between',
                             'data-[active]:bg-state-base-hover',
                           )}
-                          href='https://github.com/langgenius/dify'
+                          href='https://github.com/criminalist/dify'
                           target='_blank' rel='noopener noreferrer'>
                           <RiGithubLine className='size-4 shrink-0 text-text-tertiary' />
                           <div className='system-md-regular grow px-1 text-text-secondary'>{t('common.userProfile.github')}</div>

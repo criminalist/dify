@@ -6,15 +6,15 @@ Precisamos ser ágeis e entregar rapidamente considerando onde estamos, mas tamb
 
 Este guia, como o próprio Dify, é um trabalho em constante evolução. Agradecemos muito a sua compreensão se às vezes ele ficar atrasado em relação ao projeto real, e damos as boas-vindas a qualquer feedback para que possamos melhorar.
 
-Em termos de licenciamento, por favor, dedique um minuto para ler nosso breve [Acordo de Licença e Contribuidor](../../LICENSE). A comunidade também adere ao [código de conduta](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md).
+Em termos de licenciamento, por favor, dedique um minuto para ler nosso breve [Acordo de Licença e Contribuidor](../../LICENSE). A comunidade também adere ao [código de conduta](https://github.com/criminalist/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## Antes de começar
 
-Procurando algo para resolver? Navegue por nossos [problemas para iniciantes](https://github.com/langgenius/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) e escolha um para começar!
+Procurando algo para resolver? Navegue por nossos [problemas para iniciantes](https://github.com/criminalist/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) e escolha um para começar!
 
-Tem um novo modelo ou ferramenta para adicionar? Abra um PR em nosso [repositório de plugins](https://github.com/langgenius/dify-plugins) e mostre-nos o que você construiu.
+Tem um novo modelo ou ferramenta para adicionar? Abra um PR em nosso [repositório de plugins](https://github.com/criminalist/dify-plugins) e mostre-nos o que você construiu.
 
-Precisa atualizar um modelo existente, ferramenta ou corrigir alguns bugs? Vá para nosso [repositório oficial de plugins](https://github.com/langgenius/dify-official-plugins) e faça sua mágica!
+Precisa atualizar um modelo existente, ferramenta ou corrigir alguns bugs? Vá para nosso [repositório oficial de plugins](https://github.com/criminalist/dify-official-plugins) e faça sua mágica!
 
 Junte-se à diversão, contribua e vamos construir algo incrível juntos! 💡✨
 
@@ -55,7 +55,7 @@ Como priorizamos:
 | Tipo de Recurso | Prioridade |
 | ------------------------------------------------------------ | --------------- |
 | Recursos de alta prioridade conforme rotulado por um membro da equipe | Prioridade Alta |
-| Solicitações populares de recursos do nosso [quadro de feedback da comunidade](https://github.com/langgenius/dify/discussions/categories/feedbacks) | Prioridade Média |
+| Solicitações populares de recursos do nosso [quadro de feedback da comunidade](https://github.com/criminalist/dify/discussions/categories/feedbacks) | Prioridade Média |
 | Recursos não essenciais e melhorias menores | Prioridade Baixa |
 | Valiosos mas não imediatos | Recurso Futuro |
 
@@ -75,11 +75,11 @@ Como priorizamos:
 
 #### Frontend
 
-Para configurar o serviço frontend, por favor consulte nosso [guia abrangente](https://github.com/langgenius/dify/blob/main/web/README.md) no arquivo `web/README.md`. Este documento fornece instruções detalhadas para ajudá-lo a configurar o ambiente frontend adequadamente.
+Para configurar o serviço frontend, por favor consulte nosso [guia abrangente](https://github.com/criminalist/dify/blob/main/web/README.md) no arquivo `web/README.md`. Este documento fornece instruções detalhadas para ajudá-lo a configurar o ambiente frontend adequadamente.
 
 #### Backend
 
-Para configurar o serviço backend, por favor consulte nossas [instruções detalhadas](https://github.com/langgenius/dify/blob/main/api/README.md) no arquivo `api/README.md`. Este documento contém um guia passo a passo para ajudá-lo a colocar o backend em funcionamento sem problemas.
+Para configurar o serviço backend, por favor consulte nossas [instruções detalhadas](https://github.com/criminalist/dify/blob/main/api/README.md) no arquivo `api/README.md`. Este documento contém um guia passo a passo para ajudá-lo a colocar o backend em funcionamento sem problemas.
 
 #### Outras coisas a observar
 

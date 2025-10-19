@@ -172,7 +172,7 @@ Before deploying to production:
 
 If you encounter issues:
 
-1. Check GitHub Issues: https://github.com/langgenius/dify/issues
+1. Check GitHub Issues: https://github.com/criminalist/dify/issues
 1. Create a bug report with:
    - Error messages
    - Docker logs: `docker compose logs weaviate`

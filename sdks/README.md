@@ -2,15 +2,15 @@
 
 ## Java
 
-https://github.com/langgenius/java-client/
+https://github.com/criminalist/java-client/
 
 ## Go
 
-https://github.com/langgenius/dify-sdk-go
+https://github.com/criminalist/dify-sdk-go
 
 ## Ruby
 
-https://github.com/langgenius/ruby-sdk
+https://github.com/criminalist/ruby-sdk
 
 ## Python
 

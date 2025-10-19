@@ -6,15 +6,15 @@ Necesitamos ser ágiles y enviar rápidamente dado donde estamos, pero también 
 
 Esta guía, como Dify mismo, es un trabajo en constante progreso. Agradecemos mucho tu comprensión si a veces se queda atrás del proyecto real, y damos la bienvenida a cualquier comentario para que podamos mejorar.
 
-En términos de licencia, por favor tómate un minuto para leer nuestro breve [Acuerdo de Licencia y Colaborador](../../LICENSE). La comunidad también se adhiere al [código de conducta](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md).
+En términos de licencia, por favor tómate un minuto para leer nuestro breve [Acuerdo de Licencia y Colaborador](../../LICENSE). La comunidad también se adhiere al [código de conducta](https://github.com/criminalist/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## Antes de empezar
 
-¿Buscas algo en lo que trabajar? Explora nuestros [buenos primeros issues](https://github.com/langgenius/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) y elige uno para comenzar.
+¿Buscas algo en lo que trabajar? Explora nuestros [buenos primeros issues](https://github.com/criminalist/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) y elige uno para comenzar.
 
-¿Tienes un nuevo modelo o herramienta genial para añadir? Abre un PR en nuestro [repositorio de plugins](https://github.com/langgenius/dify-plugins) y muéstranos lo que has construido.
+¿Tienes un nuevo modelo o herramienta genial para añadir? Abre un PR en nuestro [repositorio de plugins](https://github.com/criminalist/dify-plugins) y muéstranos lo que has construido.
 
-¿Necesitas actualizar un modelo existente, herramienta o corregir algunos errores? Dirígete a nuestro [repositorio oficial de plugins](https://github.com/langgenius/dify-official-plugins) y haz tu magia.
+¿Necesitas actualizar un modelo existente, herramienta o corregir algunos errores? Dirígete a nuestro [repositorio oficial de plugins](https://github.com/criminalist/dify-official-plugins) y haz tu magia.
 
 ¡Únete a la diversión, contribuye y construyamos algo increíble juntos! 💡✨
 
@@ -55,7 +55,7 @@ Cómo priorizamos:
 | Tipo de Funcionalidad | Prioridad |
 | ------------------------------------------------------------ | --------------- |
 | Funcionalidades de alta prioridad etiquetadas por un miembro del equipo | Prioridad Alta |
-| Solicitudes populares de funcionalidades de nuestro [tablero de comentarios de la comunidad](https://github.com/langgenius/dify/discussions/categories/feedbacks) | Prioridad Media |
+| Solicitudes populares de funcionalidades de nuestro [tablero de comentarios de la comunidad](https://github.com/criminalist/dify/discussions/categories/feedbacks) | Prioridad Media |
 | Funcionalidades no principales y mejoras menores | Prioridad Baja |
 | Valiosas pero no inmediatas | Futura-Funcionalidad |
 
@@ -75,11 +75,11 @@ Cómo priorizamos:
 
 #### Frontend
 
-Para configurar el servicio frontend, por favor consulta nuestra [guía completa](https://github.com/langgenius/dify/blob/main/web/README.md) en el archivo `web/README.md`. Este documento proporciona instrucciones detalladas para ayudarte a configurar el entorno frontend correctamente.
+Para configurar el servicio frontend, por favor consulta nuestra [guía completa](https://github.com/criminalist/dify/blob/main/web/README.md) en el archivo `web/README.md`. Este documento proporciona instrucciones detalladas para ayudarte a configurar el entorno frontend correctamente.
 
 #### Backend
 
-Para configurar el servicio backend, por favor consulta nuestras [instrucciones detalladas](https://github.com/langgenius/dify/blob/main/api/README.md) en el archivo `api/README.md`. Este documento contiene una guía paso a paso para ayudarte a poner en marcha el backend sin problemas.
+Para configurar el servicio backend, por favor consulta nuestras [instrucciones detalladas](https://github.com/criminalist/dify/blob/main/api/README.md) en el archivo `api/README.md`. Este documento contiene una guía paso a paso para ayudarte a poner en marcha el backend sin problemas.
 
 #### Otras cosas a tener en cuenta
 

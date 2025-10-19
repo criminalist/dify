@@ -609,7 +609,7 @@ x-shared-env: &shared-api-worker-env
 services:
   # API service
   api:
-    image: langgenius/dify-api:1.9.1
+    image: criminalist/dify-api:1.9.1
     restart: always
     environment:
       # Use the shared environment variables.
@@ -642,10 +642,21 @@ services:
       - ssrf_proxy_network
       - default
 
+  # Unstructured API service for document processing
+  unstructured-api:
+    image: quay.io/unstructured-io/unstructured-api:latest
+    restart: always
+    ports:
+      - "8001:8000"
+    environment:
+      UNSTRUCTURED_API_KEY: ""
+    networks:
+      - default
+
   # worker service
   # The Celery worker for processing the queue.
   worker:
-    image: langgenius/dify-api:1.9.1
+    image: criminalist/dify-api:1.9.1
     restart: always
     environment:
       # Use the shared environment variables.
@@ -679,7 +690,7 @@ services:
   # worker_beat service
   # Celery beat for scheduling periodic tasks.
   worker_beat:
-    image: langgenius/dify-api:1.9.1
+    image: criminalist/dify-api:1.9.1
     restart: always
     environment:
       # Use the shared environment variables.

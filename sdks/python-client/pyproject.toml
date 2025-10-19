@@ -20,7 +20,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/langgenius/dify"
+Homepage = "https://github.com/criminalist/dify"
 
 [project.optional-dependencies]
 dev = [

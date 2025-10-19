@@ -6,15 +6,15 @@ Nous devons être agiles et livrer rapidement compte tenu de notre position, mai
 
 Ce guide, comme Dify lui-même, est un travail en constante évolution. Nous apprécions grandement votre compréhension si parfois il est en retard par rapport au projet réel, et nous accueillons tout commentaire pour nous aider à nous améliorer.
 
-En termes de licence, veuillez prendre une minute pour lire notre bref [Accord de Licence et de Contributeur](../../LICENSE). La communauté adhère également au [code de conduite](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md).
+En termes de licence, veuillez prendre une minute pour lire notre bref [Accord de Licence et de Contributeur](../../LICENSE). La communauté adhère également au [code de conduite](https://github.com/criminalist/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## Avant de vous lancer
 
-Vous cherchez quelque chose à réaliser ? Parcourez nos [problèmes pour débutants](https://github.com/langgenius/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) et choisissez-en un pour commencer !
+Vous cherchez quelque chose à réaliser ? Parcourez nos [problèmes pour débutants](https://github.com/criminalist/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) et choisissez-en un pour commencer !
 
-Vous avez un nouveau modèle ou un nouvel outil à ajouter ? Ouvrez une PR dans notre [dépôt de plugins](https://github.com/langgenius/dify-plugins) et montrez-nous ce que vous avez créé.
+Vous avez un nouveau modèle ou un nouvel outil à ajouter ? Ouvrez une PR dans notre [dépôt de plugins](https://github.com/criminalist/dify-plugins) et montrez-nous ce que vous avez créé.
 
-Vous devez mettre à jour un modèle existant, un outil ou corriger des bugs ? Rendez-vous sur notre [dépôt officiel de plugins](https://github.com/langgenius/dify-official-plugins) et faites votre magie !
+Vous devez mettre à jour un modèle existant, un outil ou corriger des bugs ? Rendez-vous sur notre [dépôt officiel de plugins](https://github.com/criminalist/dify-official-plugins) et faites votre magie !
 
 Rejoignez l'aventure, contribuez, et construisons ensemble quelque chose d'extraordinaire ! 💡✨
 
@@ -55,7 +55,7 @@ Comment nous priorisons :
 | Type de Fonctionnalité | Priorité |
 | ------------------------------------------------------------ | --------------- |
 | Fonctionnalités hautement prioritaires étiquetées par un membre de l'équipe | Priorité Haute |
-| Demandes populaires de fonctionnalités de notre [tableau de feedback communautaire](https://github.com/langgenius/dify/discussions/categories/feedbacks) | Priorité Moyenne |
+| Demandes populaires de fonctionnalités de notre [tableau de feedback communautaire](https://github.com/criminalist/dify/discussions/categories/feedbacks) | Priorité Moyenne |
 | Fonctionnalités non essentielles et améliorations mineures | Priorité Basse |
 | Précieuses mais non immédiates | Fonctionnalité Future |
 
@@ -75,11 +75,11 @@ Comment nous priorisons :
 
 #### Frontend
 
-Pour configurer le service frontend, veuillez consulter notre [guide complet](https://github.com/langgenius/dify/blob/main/web/README.md) dans le fichier `web/README.md`. Ce document fournit des instructions détaillées pour vous aider à configurer correctement l'environnement frontend.
+Pour configurer le service frontend, veuillez consulter notre [guide complet](https://github.com/criminalist/dify/blob/main/web/README.md) dans le fichier `web/README.md`. Ce document fournit des instructions détaillées pour vous aider à configurer correctement l'environnement frontend.
 
 #### Backend
 
-Pour configurer le service backend, veuillez consulter nos [instructions détaillées](https://github.com/langgenius/dify/blob/main/api/README.md) dans le fichier `api/README.md`. Ce document contient un guide étape par étape pour vous aider à faire fonctionner le backend sans problème.
+Pour configurer le service backend, veuillez consulter nos [instructions détaillées](https://github.com/criminalist/dify/blob/main/api/README.md) dans le fichier `api/README.md`. Ce document contient un guide étape par étape pour vous aider à faire fonctionner le backend sans problème.
 
 #### Autres choses à noter
 

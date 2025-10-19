@@ -173,4 +173,4 @@ Runtime Errors:
       """
 ```
 
-For interface method explanations, see: [Interfaces](./interfaces.md). For detailed implementation, refer to: [llm.py](https://github.com/langgenius/dify-runtime/blob/main/lib/model_providers/anthropic/llm/llm.py).
+For interface method explanations, see: [Interfaces](./interfaces.md). For detailed implementation, refer to: [llm.py](https://github.com/criminalist/dify-runtime/blob/main/lib/model_providers/anthropic/llm/llm.py).

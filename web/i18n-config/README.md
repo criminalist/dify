@@ -166,7 +166,7 @@ export const languages = [
 5. Don't forget to mark the supported field as `true` if the language is supported.
 
 1. Sometime you might need to do some changes in the server side. Please change this file as well. 👇
-   https://github.com/langgenius/dify/blob/61e4bbabaf2758354db4073cbea09fdd21a5bec1/api/constants/languages.py#L5
+   https://github.com/criminalist/dify/blob/61e4bbabaf2758354db4073cbea09fdd21a5bec1/api/constants/languages.py#L5
 
 ## Clean Up
 

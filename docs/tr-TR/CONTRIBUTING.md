@@ -6,15 +6,15 @@ Bulunduğumuz noktada çevik olmamız ve hızlı hareket etmemiz gerekiyor, anca
 
 Bu rehber, Dify'ın kendisi gibi, sürekli gelişen bir çalışmadır. Bazen gerçek projenin gerisinde kalırsa anlayışınız için çok minnettarız ve gelişmemize yardımcı olacak her türlü geri bildirimi memnuniyetle karşılıyoruz.
 
-Lisanslama konusunda, lütfen kısa [Lisans ve Katkıda Bulunan Anlaşmamızı](../../LICENSE) okumak için bir dakikanızı ayırın. Topluluk ayrıca [davranış kurallarına](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md) da uyar.
+Lisanslama konusunda, lütfen kısa [Lisans ve Katkıda Bulunan Anlaşmamızı](../../LICENSE) okumak için bir dakikanızı ayırın. Topluluk ayrıca [davranış kurallarına](https://github.com/criminalist/.github/blob/main/CODE_OF_CONDUCT.md) da uyar.
 
 ## Başlamadan Önce
 
-Üzerinde çalışacak bir şey mi arıyorsunuz? [İlk katkıda bulunanlar için iyi sorunlarımıza](https://github.com/langgenius/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) göz atın ve başlamak için birini seçin!
+Üzerinde çalışacak bir şey mi arıyorsunuz? [İlk katkıda bulunanlar için iyi sorunlarımıza](https://github.com/criminalist/dify/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) göz atın ve başlamak için birini seçin!
 
-Eklenecek harika bir yeni model runtime'ı veya aracınız mı var? [Eklenti depomuzda](https://github.com/langgenius/dify-plugins) bir PR açın ve ne yaptığınızı bize gösterin.
+Eklenecek harika bir yeni model runtime'ı veya aracınız mı var? [Eklenti depomuzda](https://github.com/criminalist/dify-plugins) bir PR açın ve ne yaptığınızı bize gösterin.
 
-Mevcut bir model runtime'ını, aracı güncellemek veya bazı hataları düzeltmek mi istiyorsunuz? [Resmi eklenti depomuza](https://github.com/langgenius/dify-official-plugins) gidin ve sihrinizi gösterin!
+Mevcut bir model runtime'ını, aracı güncellemek veya bazı hataları düzeltmek mi istiyorsunuz? [Resmi eklenti depomuza](https://github.com/criminalist/dify-official-plugins) gidin ve sihrinizi gösterin!
 
 Eğlenceye katılın, katkıda bulunun ve birlikte harika bir şeyler inşa edelim! 💡✨
 
@@ -55,7 +55,7 @@ Nasıl önceliklendiriyoruz:
 | Özellik Türü | Öncelik |
 | ------------------------------------------------------------ | --------------- |
 | Bir ekip üyesi tarafından etiketlenen Yüksek Öncelikli Özellikler | Yüksek Öncelik |
-| [Topluluk geri bildirim panosundan](https://github.com/langgenius/dify/discussions/categories/feedbacks) popüler özellik istekleri | Orta Öncelik |
+| [Topluluk geri bildirim panosundan](https://github.com/criminalist/dify/discussions/categories/feedbacks) popüler özellik istekleri | Orta Öncelik |
 | Temel olmayan özellikler ve küçük geliştirmeler | Düşük Öncelik |
 | Değerli ama acil olmayan | Gelecek-Özellik |
 
@@ -75,11 +75,11 @@ Nasıl önceliklendiriyoruz:
 
 #### Frontend
 
-Frontend hizmetini kurmak için, lütfen `web/README.md` dosyasındaki kapsamlı [rehberimize](https://github.com/langgenius/dify/blob/main/web/README.md) bakın. Bu belge, frontend ortamını düzgün bir şekilde kurmanıza yardımcı olacak ayrıntılı talimatlar sağlar.
+Frontend hizmetini kurmak için, lütfen `web/README.md` dosyasındaki kapsamlı [rehberimize](https://github.com/criminalist/dify/blob/main/web/README.md) bakın. Bu belge, frontend ortamını düzgün bir şekilde kurmanıza yardımcı olacak ayrıntılı talimatlar sağlar.
 
 #### Backend
 
-Backend hizmetini kurmak için, lütfen `api/README.md` dosyasındaki detaylı [talimatlarımıza](https://github.com/langgenius/dify/blob/main/api/README.md) bakın. Bu belge, backend'i sorunsuz bir şekilde çalıştırmanıza yardımcı olacak adım adım bir kılavuz içerir.
+Backend hizmetini kurmak için, lütfen `api/README.md` dosyasındaki detaylı [talimatlarımıza](https://github.com/criminalist/dify/blob/main/api/README.md) bakın. Bu belge, backend'i sorunsuz bir şekilde çalıştırmanıza yardımcı olacak adım adım bir kılavuz içerir.
 
 #### Dikkat Edilecek Diğer Şeyler
 
