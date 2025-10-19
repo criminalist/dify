@@ -25,7 +25,7 @@
         <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff"
             alt="seguir en LinkedIn"></a>
     <a href="https://hub.docker.com/u/langgenius" target="_blank">
-        <img alt="Descargas de Docker" src="https://img.shields.io/docker/pulls/langgenius/dify-web?labelColor=%20%23FDB062&color=%20%23f79009"></a>
+        <img alt="Descargas de Docker" src="https://img.shields.io/docker/pulls/criminalist/dify-web?labelColor=%20%23FDB062&color=%20%23f79009"></a>
     <a href="https://github.com/criminalist/dify/graphs/commit-activity" target="_blank">
         <img alt="Actividad de Commits el último mes" src="https://img.shields.io/github/commit-activity/m/langgenius/dify?labelColor=%20%2332b583&color=%20%2312b76a"></a>
     <a href="https://github.com/criminalist/dify/" target="_blank">
