@@ -1,0 +1,24 @@
+name: Sync with upstream
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # каждую неделю в понедельник в 00:00
+  workflow_dispatch:  # кнопка "Run workflow" в GitHub
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Sync with upstream
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git remote add upstream https://github.com/langgenius/dify.git
+          git fetch upstream
+          git checkout main
+          git merge upstream/main
+          git push origin main
