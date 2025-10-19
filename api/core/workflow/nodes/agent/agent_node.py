@@ -102,6 +102,17 @@ class AgentNode(Node):
     def _run(self) -> Generator[NodeEventBase, None, None]:
         from core.plugin.impl.exc import PluginDaemonClientSideError
 
+        # Check if required agent strategy fields are provided
+        if not self._node_data.agent_strategy_provider_name or not self._node_data.agent_strategy_name:
+            yield StreamCompletedEvent(
+                node_run_result=NodeRunResult(
+                    status=WorkflowNodeExecutionStatus.FAILED,
+                    inputs={},
+                    error="Agent strategy provider name and strategy name are required but not provided",
+                ),
+            )
+            return
+
         try:
             strategy = get_plugin_agent_strategy(
                 tenant_id=self.tenant_id,
@@ -402,6 +413,10 @@ class AgentNode(Node):
         Get agent strategy icon
         :return:
         """
+        # Return None if agent strategy provider name is not provided
+        if not self._node_data.agent_strategy_provider_name:
+            return None
+            
         from core.plugin.impl.plugin import PluginInstaller
 
         manager = PluginInstaller()
