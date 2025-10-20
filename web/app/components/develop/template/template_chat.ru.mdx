@@ -1,0 +1,44 @@
+import { CodeGroup } from '../code.tsx'
+import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from '../md.tsx'
+
+# Chat App API
+
+<div>
+  ### Базовый URL
+  <CodeGroup title="Код" targetCode={props.appDetail.api_base_url} />
+
+  ### Аутентификация
+  Сервисный API использует аутентификацию через `API-Key`.
+  <i>Рекомендуется хранить ключ API на стороне сервера и не размещать его на клиенте.</i>
+
+  Для всех запросов указывайте ключ в HTTP-заголовке `Authorization`:
+  <CodeGroup title="Код" targetCode='Authorization: Bearer {API_KEY}' />
+</div>
+
+---
+
+<Heading url='/chat-messages' method='POST' title='Отправить сообщение в чат' name='#Send-Chat-Message' />
+<Row>
+  <Col>
+    Отправка запроса в чат-приложение.
+
+    ### Тело запроса
+    <Properties>
+      <Property name='query' type='string' key='query'>Текст вопроса/сообщения пользователя</Property>
+      <Property name='inputs' type='object' key='inputs'>Пары ключ/значение для переменных приложения</Property>
+      <Property name='response_mode' type='string' key='response_mode'>`streaming` или `blocking`</Property>
+      <Property name='user' type='string' key='user'>Идентификатор конечного пользователя</Property>
+    </Properties>
+  </Col>
+  <Col sticky>
+    <CodeGroup
+      title="Запрос"
+      tag="POST"
+      label="/chat-messages"
+      targetCode={`curl -X POST '${props.appDetail.api_base_url}/chat-messages' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query": "Привет", "response_mode": "streaming", "user": "abc-123"}'`}
+    />
+  </Col>
+</Row>

@@ -1,0 +1,38 @@
+import { CodeGroup } from '../code.tsx'
+import { Row, Col, Properties, Property, Heading } from '../md.tsx'
+
+# Workflow App API
+
+<div>
+  ### Базовый URL
+  <CodeGroup title="Код" targetCode={props.appDetail.api_base_url} />
+
+  ### Аутентификация
+  Сервисный API использует `API-Key`.
+  <CodeGroup title="Код" targetCode='Authorization: Bearer {API_KEY}' />
+</div>
+
+---
+
+<Heading url='/workflows/run' method='POST' title='Запуск workflow' name='#Execute-Workflow' />
+<Row>
+  <Col>
+    Выполнение опубликованного workflow.
+    <Properties>
+      <Property name='inputs' type='object' key='inputs'>Входные переменные</Property>
+      <Property name='response_mode' type='string' key='response_mode'>`streaming` | `blocking`</Property>
+      <Property name='user' type='string' key='user'>ID пользователя</Property>
+    </Properties>
+  </Col>
+  <Col sticky>
+    <CodeGroup
+      title="Запрос"
+      tag="POST"
+      label="/workflows/run"
+      targetCode={`curl -X POST '${props.appDetail.api_base_url}/workflows/run' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json' \
+--data-raw '{"inputs": {}, "response_mode": "streaming", "user": "abc-123"}'`}
+    />
+  </Col>
+</Row>

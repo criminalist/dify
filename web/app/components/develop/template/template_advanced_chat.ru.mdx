@@ -1,0 +1,39 @@
+import { CodeGroup } from '../code.tsx'
+import { Row, Col, Properties, Property, Heading } from '../md.tsx'
+
+# Advanced Chat App API
+
+<div>
+  ### Базовый URL
+  <CodeGroup title="Код" targetCode={props.appDetail.api_base_url} />
+
+  ### Аутентификация
+  Сервисный API использует `API-Key`.
+  <CodeGroup title="Код" targetCode='Authorization: Bearer {API_KEY}' />
+</div>
+
+---
+
+<Heading url='/chat-messages' method='POST' title='Отправить сообщение' name='#Send-Chat-Message' />
+<Row>
+  <Col>
+    Поддерживается потоковый режим и расширенные события (workflow, node, tts...).
+    <Properties>
+      <Property name='query' type='string' key='query'>Текст запроса</Property>
+      <Property name='inputs' type='object' key='inputs'>Переменные</Property>
+      <Property name='response_mode' type='string' key='response_mode'>`streaming` | `blocking`</Property>
+      <Property name='user' type='string' key='user'>ID пользователя</Property>
+    </Properties>
+  </Col>
+  <Col sticky>
+    <CodeGroup
+      title="Запрос"
+      tag="POST"
+      label="/chat-messages"
+      targetCode={`curl -X POST '${props.appDetail.api_base_url}/chat-messages' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query": "Привет", "response_mode": "streaming", "user": "abc-123"}'`}
+    />
+  </Col>
+</Row>
