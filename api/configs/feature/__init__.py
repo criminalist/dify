@@ -926,6 +926,13 @@ class WorkspaceConfig(BaseSettings):
         default=72,
     )
 
+    # When true, workspace-related limits are considered disabled (unlimited),
+    # regardless of values coming from Billing or Enterprise services.
+    DISABLE_WORKSPACE_LIMITS: bool = Field(
+        description="Disable workspace limits globally (treat as unlimited)",
+        default=False,
+    )
+
 
 class IndexingConfig(BaseSettings):
     """

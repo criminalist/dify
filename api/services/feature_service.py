@@ -176,6 +176,12 @@ class FeatureService:
             features.webapp_copyright_enabled = True
             cls._fulfill_params_from_workspace_info(features, tenant_id)
 
+        # honor global switch to disable workspace limits
+        if dify_config.DISABLE_WORKSPACE_LIMITS:
+            features.workspace_members.enabled = False
+            features.workspace_members.limit = 0
+            # keep size as-is, but with enabled=false or limit=0 it is treated as unlimited
+
         return features
 
     @classmethod
@@ -203,6 +209,11 @@ class FeatureService:
 
         if dify_config.MARKETPLACE_ENABLED:
             system_features.enable_marketplace = True
+
+        # honor global switch to disable workspace limits on license scope too
+        if dify_config.DISABLE_WORKSPACE_LIMITS:
+            system_features.license.workspaces.enabled = False
+            system_features.license.workspaces.limit = 0
 
         return system_features
 
