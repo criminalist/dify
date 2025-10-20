@@ -204,11 +204,13 @@ workflow:
             ja_JP: 解析するファイル(pdf, ppt, pptx, doc, docx, png, jpg, jpegをサポート)
             pt_BR: o arquivo a ser analisado (suporta pdf, ppt, pptx, doc, docx, png,
               jpg, jpeg)
+            ru_RU: файл для парсинга (поддерживает pdf, ppt, pptx, doc, docx, png, jpg, jpeg)
             zh_Hans: 用于解析的文件(支持 pdf, ppt, pptx, doc, docx, png, jpg, jpeg)
           label:
             en_US: file
             ja_JP: ファイル
             pt_BR: arquivo
+            ru_RU: файл
             zh_Hans: file
           llm_description: the file to be parsed (support pdf, ppt, pptx, doc, docx,
             png, jpg, jpeg)
@@ -256,7 +258,7 @@ workflow:
     - data:
         is_array_file: false
         selected: false
-        title: 文档提取器
+        title: Document Extractor
         type: document-extractor
         variable_selector:
         - '1752479895761'
@@ -428,11 +430,13 @@ workflow:
             en_US: The text you want to chunk.
             ja_JP: チャンク化したいテキスト。
             pt_BR: O texto que você deseja dividir.
+            ru_RU: Текст, который вы хотите разбить на части.
             zh_Hans: 你想要分块的文本。
           label:
             en_US: Input text
             ja_JP: 入力テキスト
             pt_BR: Texto de entrada
+            ru_RU: Входной текст
             zh_Hans: 输入文本
           llm_description: The text you want to chunk.
           max: null
@@ -452,11 +456,13 @@ workflow:
             en_US: Maximum length for chunking
             ja_JP: チャンク分割の最大長
             pt_BR: Comprimento máximo para divisão
+            ru_RU: Максимальная длина для разбиения на части
             zh_Hans: 用于分块的最大长度
           label:
             en_US: Maximum Length
             ja_JP: 最大長
             pt_BR: Comprimento Máximo
+            ru_RU: Максимальная длина
             zh_Hans: 最大长度
           llm_description: Maximum length allowed per chunk
           max: null
@@ -479,11 +485,13 @@ workflow:
             en_US: Separator used for chunking
             ja_JP: チャンク分割に使用する区切り文字
             pt_BR: Separador usado para divisão
+            ru_RU: Разделитель, используемый для разбиения на части
             zh_Hans: 用于分块的分隔符
           label:
             en_US: Chunk Separator
             ja_JP: チャンク区切り文字
             pt_BR: Separador de Divisão
+            ru_RU: Разделитель частей
             zh_Hans: 分块分隔符
           llm_description: The separator used to split chunks
           max: null
@@ -503,11 +511,13 @@ workflow:
             en_US: Maximum length for subchunking
             ja_JP: サブチャンク分割の最大長
             pt_BR: Comprimento máximo para subdivisão
+            ru_RU: Максимальная длина для подразбиения на части
             zh_Hans: 用于子分块的最大长度
           label:
             en_US: Subchunk Maximum Length
             ja_JP: サブチャンク最大長
             pt_BR: Comprimento Máximo de Subdivisão
+            ru_RU: Максимальная длина подчастей
             zh_Hans: 子分块最大长度
           llm_description: Maximum length allowed per subchunk
           max: null
@@ -527,11 +537,13 @@ workflow:
             en_US: Separator used for subchunking
             ja_JP: サブチャンク分割に使用する区切り文字
             pt_BR: Separador usado para subdivisão
+            ru_RU: Разделитель, используемый для подразбиения на части
             zh_Hans: 用于子分块的分隔符
           label:
             en_US: Subchunk Separator
             ja_JP: サブチャンキング用セパレーター
             pt_BR: Separador de Subdivisão
+            ru_RU: Разделитель подчастей
             zh_Hans: 子分块分隔符
           llm_description: The separator used to split subchunks
           max: null
@@ -556,11 +568,15 @@ workflow:
             pt_BR: Dividir texto em parágrafos com base no separador e no comprimento
               máximo do bloco, usando o texto dividido como bloco pai ou documento
               completo como bloco pai e diretamente recuperá-lo.
+            ru_RU: Разделить текст на абзацы на основе разделителя и максимальной длины
+              части, используя разделенный текст как родительский блок или весь документ
+              как родительский блок и напрямую извлекать.
             zh_Hans: 根据分隔符和最大块长度将文本拆分为段落，使用拆分文本作为检索的父块或整个文档用作父块并直接检索。
           label:
             en_US: Parent Mode
             ja_JP: 親子モード
             pt_BR: Modo Pai
+            ru_RU: Режим родительского блока
             zh_Hans: 父块模式
           llm_description: Split text into paragraphs based on separator and maximum
             chunk length, using split text as parent block or entire document as parent
@@ -574,6 +590,7 @@ workflow:
               en_US: Paragraph
               ja_JP: 段落
               pt_BR: Parágrafo
+              ru_RU: Абзац
               zh_Hans: 段落
             value: paragraph
           - icon: ''
@@ -581,6 +598,7 @@ workflow:
               en_US: Full Document
               ja_JP: 全文
               pt_BR: Documento Completo
+              ru_RU: Полный документ
               zh_Hans: 全文
             value: full_doc
           placeholder: null
@@ -596,11 +614,13 @@ workflow:
             en_US: Whether to remove extra spaces in the text
             ja_JP: テキスト内の余分なスペースを削除するかどうか
             pt_BR: Se deve remover espaços extras no texto
+            ru_RU: Удалять ли лишние пробелы в тексте
             zh_Hans: 是否移除文本中的多余空格
           label:
             en_US: Remove Extra Spaces
             ja_JP: 余分なスペースを削除
             pt_BR: Remover Espaços Extras
+            ru_RU: Удалить лишние пробелы
             zh_Hans: 移除多余空格
           llm_description: Whether to remove extra spaces in the text
           max: null
@@ -620,11 +640,13 @@ workflow:
             en_US: Whether to remove URLs and emails in the text
             ja_JP: テキスト内のURLやメールアドレスを削除するかどうか
             pt_BR: Se deve remover URLs e e-mails no texto
+            ru_RU: Удалять ли URL и электронные адреса в тексте
             zh_Hans: 是否移除文本中的URL和电子邮件地址
           label:
             en_US: Remove URLs and Emails
             ja_JP: URLとメールアドレスを削除
             pt_BR: Remover URLs e E-mails
+            ru_RU: Удалить URL и электронные адреса
             zh_Hans: 移除URL和电子邮件地址
           llm_description: Whether to remove URLs and emails in the text
           max: null
