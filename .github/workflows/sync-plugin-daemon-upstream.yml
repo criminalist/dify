@@ -4,21 +4,39 @@ on:
     - cron: '0 3 * * *'  # каждый день в 03:00 UTC
   workflow_dispatch:  # кнопка "Run workflow" в GitHub
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout fork repository criminalist/dify-plugin-daemon
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: criminalist/dify-plugin-daemon
+          ref: main
+          fetch-depth: 0  # нужна полная история для корректного merge/rebase
+          token: ${{ secrets.PLUGIN_DAEMON_PAT }}
 
-      - name: Sync with upstream
+      - name: Configure git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git remote add upstream https://github.com/langgenius/dify-plugin-daemon.git
-          git fetch upstream
+          git config pull.rebase false
+
+      - name: Add upstream and fetch
+        run: |
+          # официальный репозиторий как upstream
+          git remote add upstream https://github.com/langgenius/dify-plugin-daemon.git || true
+          git fetch upstream --tags
+
+      - name: Merge upstream/main into main
+        run: |
           git checkout main
-          git merge upstream/main
+          git merge --no-edit upstream/main
+
+      - name: Push to fork (main + tags)
+        run: |
           git push origin main
+          git push origin --tags
