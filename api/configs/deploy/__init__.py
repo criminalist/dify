@@ -32,3 +32,9 @@ class DeploymentConfig(BaseSettings):
         description="Deployment environment (e.g., 'PRODUCTION', 'DEVELOPMENT'), default to PRODUCTION",
         default="PRODUCTION",
     )
+
+    # Internationalization configuration
+    DEFAULT_LANGUAGE: str = Field(
+        description="Default language for backend messages (e.g., 'en-US', 'ru-RU')",
+        default="en-US",
+    )

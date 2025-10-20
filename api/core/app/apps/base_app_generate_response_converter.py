@@ -7,6 +7,7 @@ from core.app.entities.app_invoke_entities import InvokeFrom
 from core.app.entities.task_entities import AppBlockingResponse, AppStreamResponse
 from core.errors.error import ModelCurrentlyNotSupportError, ProviderTokenNotInitError, QuotaExceededError
 from core.model_runtime.errors.invoke import InvokeError
+from libs.i18n import BackendI18n
 
 logger = logging.getLogger(__name__)
 
@@ -105,8 +106,7 @@ class AppGenerateResponseConverter(ABC):
             ProviderTokenNotInitError: {"code": "provider_not_initialize", "status": 400},
             QuotaExceededError: {
                 "code": "provider_quota_exceeded",
-                "message": "Your quota for Dify Hosted Model Provider has been exhausted. "
-                "Please go to Settings -> Model Provider to complete your own provider credentials.",
+                "message": BackendI18n.get_text("quota.exhausted"),
                 "status": 400,
             },
             ModelCurrentlyNotSupportError: {"code": "model_currently_not_support", "status": 400},
@@ -125,7 +125,7 @@ class AppGenerateResponseConverter(ABC):
             logger.error(e)
             data = {
                 "code": "internal_server_error",
-                "message": "Internal Server Error, please contact support.",
+                "message": BackendI18n.get_text("error.internal_server"),
                 "status": 500,
             }
 

@@ -11,6 +11,7 @@ from werkzeug.http import HTTP_STATUS_CODES
 from configs import dify_config
 from constants import COOKIE_NAME_ACCESS_TOKEN, COOKIE_NAME_CSRF_TOKEN, COOKIE_NAME_REFRESH_TOKEN
 from core.errors.error import AppInvokeQuotaExceededError
+from libs.i18n import BackendI18n
 from libs.token import is_secure
 
 
@@ -36,7 +37,7 @@ def register_external_error_handlers(api: Api):
             "status": status_code,
         }
         if default_data["message"] == "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)":
-            default_data["message"] = "Invalid JSON payload received or JSON payload is empty."
+            default_data["message"] = BackendI18n.get_text("error.invalid_json")
 
         # Use headers on the exception if present; otherwise none.
         headers = {}

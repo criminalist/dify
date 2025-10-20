@@ -20,6 +20,7 @@ from core.model_runtime.errors.invoke import InvokeAuthorizationError, InvokeErr
 from core.moderation.output_moderation import ModerationRule, OutputModeration
 from models.enums import MessageStatus
 from models.model import Message
+from libs.i18n import BackendI18n
 
 logger = logging.getLogger(__name__)
 
@@ -47,7 +48,7 @@ class BasedGenerateTaskPipeline:
         err: Exception
 
         if isinstance(e, InvokeAuthorizationError):
-            err = InvokeAuthorizationError("Incorrect API key provided")
+            err = InvokeAuthorizationError(BackendI18n.get_text("auth.incorrect_api_key"))
         elif isinstance(e, InvokeError | ValueError):
             err = e  # ty: ignore [invalid-assignment]
         else:
@@ -74,14 +75,11 @@ class BasedGenerateTaskPipeline:
         :return:
         """
         if isinstance(e, QuotaExceededError):
-            return (
-                "Your quota for Dify Hosted Model Provider has been exhausted. "
-                "Please go to Settings -> Model Provider to complete your own provider credentials."
-            )
+            return BackendI18n.get_text("quota.exhausted")
 
         message = getattr(e, "description", str(e))
         if not message:
-            message = "Internal Server Error, please contact support."
+            message = BackendI18n.get_text("error.internal_server")
 
         return message
 

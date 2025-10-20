@@ -33,6 +33,7 @@ from core.tools.errors import (
 from core.tools.utils.message_transformer import ToolFileMessageTransformer, safe_json_value
 from core.tools.workflow_as_tool.tool import WorkflowTool
 from extensions.ext_database import db
+from libs.i18n import BackendI18n
 from models.enums import CreatorUserRole
 from models.model import Message, MessageFile
 
@@ -123,24 +124,24 @@ class ToolEngine:
             # transform tool invoke message to get LLM friendly message
             return plain_text, message_files, meta
         except ToolProviderCredentialValidationError as e:
-            error_response = "Please check your tool provider credentials"
+            error_response = BackendI18n.get_text("tool.credentials_error")
             agent_tool_callback.on_tool_error(e)
         except (ToolNotFoundError, ToolNotSupportedError, ToolProviderNotFoundError) as e:
-            error_response = f"there is not a tool named {tool.entity.identity.name}"
+            error_response = BackendI18n.get_text("tool.not_found", tool_name=tool.entity.identity.name)
             agent_tool_callback.on_tool_error(e)
         except ToolParameterValidationError as e:
-            error_response = f"tool parameters validation error: {e}, please check your tool parameters"
+            error_response = BackendI18n.get_text("tool.parameter_error", error=str(e))
             agent_tool_callback.on_tool_error(e)
         except ToolInvokeError as e:
-            error_response = f"tool invoke error: {e}"
+            error_response = BackendI18n.get_text("tool.invoke_error", error=str(e))
             agent_tool_callback.on_tool_error(e)
         except ToolEngineInvokeError as e:
             meta = e.meta
-            error_response = f"tool invoke error: {meta.error}"
+            error_response = BackendI18n.get_text("tool.invoke_error", error=meta.error)
             agent_tool_callback.on_tool_error(e)
             return error_response, [], meta
         except Exception as e:
-            error_response = f"unknown error: {e}"
+            error_response = BackendI18n.get_text("tool.unknown_error", error=str(e))
             agent_tool_callback.on_tool_error(e)
 
         return error_response, [], ToolInvokeMeta.error_instance(error_response)
