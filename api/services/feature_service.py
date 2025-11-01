@@ -293,6 +293,13 @@ class FeatureService:
     @classmethod
     def _fulfill_params_from_enterprise(cls, features: SystemFeatureModel):
         try:
+            import os
+            # Проверяем, что enterprise API URL настроен правильно
+            enterprise_api_url = os.environ.get("ENTERPRISE_API_URL", "")
+            if not enterprise_api_url or enterprise_api_url == "ENTERPRISE_API_URL" or not enterprise_api_url.startswith("http"):
+                # Enterprise API не настроен, используем значения из переменных окружения
+                return
+            
             enterprise_info = EnterpriseService.get_info()
             if not enterprise_info or not isinstance(enterprise_info, dict):
                 return
