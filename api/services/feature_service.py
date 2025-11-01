@@ -294,10 +294,10 @@ class FeatureService:
     def _fulfill_params_from_enterprise(cls, features: SystemFeatureModel):
         enterprise_info = None
         try:
-            import os
+            from services.enterprise.base import EnterpriseRequest
             # Проверяем, что enterprise API URL настроен правильно
-            enterprise_api_url = os.environ.get("ENTERPRISE_API_URL", "")
-            if not enterprise_api_url or enterprise_api_url == "ENTERPRISE_API_URL" or not enterprise_api_url.startswith("http"):
+            enterprise_api_url = EnterpriseRequest.base_url
+            if not enterprise_api_url or enterprise_api_url == "ENTERPRISE_API_URL" or not enterprise_api_url.startswith(("http://", "https://")):
                 # Enterprise API не настроен, используем значения из переменных окружения
                 return
             
