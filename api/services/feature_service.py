@@ -292,6 +292,7 @@ class FeatureService:
 
     @classmethod
     def _fulfill_params_from_enterprise(cls, features: SystemFeatureModel):
+        enterprise_info = None
         try:
             import os
             # Проверяем, что enterprise API URL настроен правильно
@@ -305,6 +306,9 @@ class FeatureService:
                 return
         except Exception:
             # Если enterprise сервис недоступен, используем значения из переменных окружения
+            return
+
+        if not enterprise_info:
             return
 
         if "SSOEnforcedForSignin" in enterprise_info:
