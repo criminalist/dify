@@ -292,7 +292,13 @@ class FeatureService:
 
     @classmethod
     def _fulfill_params_from_enterprise(cls, features: SystemFeatureModel):
-        enterprise_info = EnterpriseService.get_info()
+        try:
+            enterprise_info = EnterpriseService.get_info()
+            if not enterprise_info or not isinstance(enterprise_info, dict):
+                return
+        except Exception:
+            # Если enterprise сервис недоступен, используем значения из переменных окружения
+            return
 
         if "SSOEnforcedForSignin" in enterprise_info:
             features.sso_enforced_for_signin = enterprise_info["SSOEnforcedForSignin"]
